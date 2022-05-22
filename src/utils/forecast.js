@@ -12,7 +12,7 @@ const forecast = (x, y, callback) => {
         }
         else{
         
-            callback(undefined,"It is currently " + (response.body.current.temperature) + " degreees out. It feels like " + (response.body.current.feelslike) + " degress out.")
+            callback(undefined,"It is currently " + (response.body.current.temperature) + " degreees out. It feels like " + (response.body.current.feelslike) + " degress out. Humidity is "+ (response.body.current.humidity))
         }
     })
 }
